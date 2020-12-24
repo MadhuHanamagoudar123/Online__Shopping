@@ -91,7 +91,6 @@ CREATE TABLE `cart` (
 -- Dumping data for table `cart`
 --
 
-INSERT INTO `cart` (`id`, `p_id`, `ip_add`, `user_id`, `qty`) 
 
 -- --------------------------------------------------------
 
@@ -132,7 +131,6 @@ CREATE TABLE `email_info` (
 -- Dumping data for table `email_info`
 --
 
-INSERT INTO `email_info` (`email_id`, `email`)
 
 -- --------------------------------------------------------
 
@@ -197,7 +195,6 @@ CREATE TABLE `orders_info` (
 -- Dumping data for table `orders_info`
 --
 
-INSERT INTO `orders_info` (`order_id`, `user_id`, `f_name`, `email`, `address`, `city`, `state`, `zip`, `cardname`, `cardnumber`, `expdate`, `prod_count`, `total_amt`, `cvv`) `  
 
 -- --------------------------------------------------------
 
@@ -337,7 +334,9 @@ CREATE TABLE `user_info` (
 -- Dumping data for table `user_info`
 --
 
-INSERT INTO `user_info` (`user_id`, `first_name`, `last_name`, `email`, `password`, `mobile`, `address1`, `address2`) 
+
+
+--
 -- Triggers `user_info`
 --
 DELIMITER $$
@@ -368,7 +367,7 @@ CREATE TABLE `user_info_backup` (
 -- Dumping data for table `user_info_backup`
 --
 
-INSERT INTO `user_info_backup` (`user_id`, `first_name`, `last_name`, `email`, `password`, `mobile`, `address1`, `address2`) VALUES
+
 
 --
 -- Indexes for dumped tables
